@@ -1,0 +1,210 @@
+// Inclusive Media Queries /////////////////////////////////////////////////////////////////
+
+// Extra small devices (phones, less than 768px)
+// No media query since this is the default in Bootstrap (These are included in modules & layouts sass files)
+
+// Small devices (tablets, 768px and up)
+@media (min-width: $screen-sm-min) {
+
+    .sidebar-col .widget {
+        h3 { text-align: left }    
+    }
+
+    .masthead {
+        background-color: $gray-lighter;
+    }
+
+    .navbar-collapse {
+        .navbar-nav li { border: none; }
+    }
+
+    .small-footer {
+        a {
+            display: inline;
+            text-align: left;        
+        }
+        .footer-menu, .footer-credits { // width: auto;
+        }    
+
+        .footer-credits a,
+        .footer-menu .menu li a {
+            padding-right: $space-sm;
+        }
+    }
+
+
+}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: $screen-md-min) {
+    header .navbar-brand img { width: 100%; }    
+    .footer-credits, .footer-menu { float: left; }
+    .small-footer {
+        .footer-credits { text-align: left; }   
+        .footer-menu {
+            padding: 0;
+            margin: 0;
+            border: none;
+            .menu li a { font-size: 13px; }
+        }
+    }
+    .small-footer .paradox p { text-align: right; }
+    .small-footer .footer-menu .copyright { float: left; }
+    .logos .container .cred-logo {
+        padding-left: 30px;
+        padding-right: 30px;
+    }    
+    .sidebar #widget_sp_image-3 img {
+        width: 75%;
+        @include border-radius(200px);
+        border: 4px solid $hr-border;
+    }        
+}
+
+// Exclusive Media Queries /////////////////////////////////////////////////////////////////
+
+// Extra small devices only (phones, less than 768px)
+@media (max-width: $screen-xs-max) {
+
+    .navbar-default { 
+        background-color: $brand-primary; 
+        .navbar-collapse { background-color: $navbar-default-bg; }
+    }    
+    body header .top-navbar .navbar-header {
+        // float: none;
+        .navbar-toggle {  
+            text-align: center;
+            position: relative;
+            display: block; 
+            width: 100%;
+            margin: 0;
+            background: darken($brand-primary, 10%);
+            padding: 12px 0;
+            border-radius: 0;           
+            .menu-elements { 
+                margin-left: auto; 
+                margin-right: auto; 
+                float: none; 
+                width: 80px;
+            }
+            .menu-text {}
+            .icon-bar {}
+        }
+    }
+
+    .clipboard-icon {        
+        padding-left: 109px;
+        padding-top: 13px;        
+    }
+
+    .footer-logo {
+        padding-bottom: $space-sm;
+        display: block;
+    }    
+
+    .logos .container div {
+        padding: 10px 75px;
+    }    
+    
+    .masthead, .primary-content, .more-foot, .small-footer, .main-col {
+        padding-top: ($space-lg - 50);        
+        padding-bottom: ($space-lg - 50);
+    }
+
+    .body-content {
+
+        h1 {
+            font-size: ($font-size-h1 * 0.8);
+        }
+        h2 {
+            font-size: ($font-size-h2 * 0.9);
+        } 
+        h3 {
+            font-size: ($font-size-h3 * 1);
+        }    
+        h4 {
+            font-size: ($font-size-h4 * 0.9);
+        } 
+        h5 {
+            font-size: ($font-size-h5 * 0.8);
+        }   
+        h6 {
+            // font-size: $font-size-h6;
+        }      
+
+        p, ul, ol {
+            margin: $mobile-paragraph-top-margin;
+        }                
+    }
+
+    .primary-content, .masthead, .logos, .footer {
+        .btn {
+            margin: $mobile-paragraph-top-margin;
+        }  
+    }
+
+    .col-no-padding-xs {
+        padding-left: 0px;
+        padding-right: 0px;
+    }        
+    
+    .navbar-header {
+        .navbar-brand { width: 100%; }
+        .navbar-toggle {
+            .menu-text {}
+        }
+    }
+
+    .no-float-xs {
+        float: none!important;
+    }
+    header .navbar-brand {
+        text-align: center;
+        img { float: none; }
+    }
+
+    footer .footer-credits a { padding: 0; }
+}
+
+// Small devices only (tablets, 768px to 992px)
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .navbar-default { 
+        background-color: $brand-primary; 
+        .navbar-collapse { background-color: $navbar-default-bg; }
+    }        
+    .col-no-padding-sm {
+        padding-left: 0px;
+        padding-right: 0px;
+    }    
+    .no-float-sm { float: none!important; }    
+    .small-footer {
+        .footer-credits a { padding: 0; }
+        .footer-menu { 
+            text-align: center; 
+            .menu li a { padding-right: 12px; padding-left: 12px; }      
+        }
+    }
+}
+
+// Medium devices only (desktops, 992px to 1200px)
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .navbar-collapse .gform_wrapper { width: 206px; }
+    .col-no-padding-md {
+        padding-left: 0px;
+        padding-right: 0px;
+    }       
+    .no-float-md { float: none!important; }       
+}
+
+// Large devices only (large desktops, 1200px and up)
+@media (min-width: $screen-lg-min) {
+
+    .col-no-padding-lg {
+        padding-left: 0px;
+        padding-right: 0px;
+    }        
+
+    .no-float-lg {
+        float: none!important;
+    }      
+}

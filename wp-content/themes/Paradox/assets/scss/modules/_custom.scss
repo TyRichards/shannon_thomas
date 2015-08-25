@@ -1,0 +1,41 @@
+// CUSTOM VARIABLES
+
+// Border Radius /////////////////////////////////////////////////////////////////
+
+$default-border-radius:     3px;
+$border-radius-img:         4px;
+
+// Sections Margins & Padding /////////////////////////////////////////////////////////////////
+
+$space-xs:                  10px;
+$space-sm:                  25px;
+$space-md:                  50px;
+$space-lg:                  75px;
+$space-xl:                  100px;
+
+// Vertical
+$space-xs-vert:             $space-xs 0;
+$space-sm-vert:             $space-sm 0;
+$space-md-vert:             $space-md 0;
+$space-lg-vert:             $space-lg 0;
+$space-xl-vert:             $space-xl 0;
+
+// Horizontal
+$space-xs-horiz:            0 $space-xs;
+$space-sm-horiz:            0 $space-sm;
+$space-md-horiz:            0 $space-md;
+$space-lg-horiz:            0 $space-lg;
+$space-xl-horiz:            0 $space-xl;
+
+
+// Typography /////////////////////////////////////////////////////////////////
+
+$paragraph-margin: 35px;
+$mobile-paragraph-margin: $space-sm;
+$paragraph-top-margin: $paragraph-margin 0 0 0;
+$mobile-paragraph-top-margin: $mobile-paragraph-margin 0 0 0;
+
+// Font weights
+$light: 300;
+$regular: normal;
+$bold: 700;

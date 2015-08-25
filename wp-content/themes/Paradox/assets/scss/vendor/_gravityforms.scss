@@ -1,0 +1,65 @@
+// From Gavrisimo @ https://gist.github.com/Gavrisimo/8406309
+
+.gform_wrapper {
+ 
+    ul {
+        @extend .list-unstyled;
+    }
+ 
+    li {
+        @extend .form-group;
+    }
+ 
+    form {
+        margin-bottom: 0;
+    }
+ 
+    .gfield_required {
+        padding-left: 1px;
+        color: $state-danger-text;
+    }
+}
+ 
+.ginput_container {
+ 
+    input,
+    select,
+    textarea {
+        @extend .form-control;
+    }
+ 
+    textarea {
+      height: auto;
+    }
+}
+ 
+.gform_button {
+  @extend .btn;
+  @extend .btn-warning;
+}
+ 
+.gform_wrapper .gfield_error {
+ 
+    .gfield_label {
+        color: $state-danger-text;
+    }
+ 
+    input,
+    select,
+    textarea {
+        border-color: $alert-danger-border;
+        background-color: $alert-danger-bg;
+        color: $alert-danger-text;
+        @include form-control-focus( $alert-danger-text );
+    }
+}
+ 
+.validation_error {
+    @extend .alert;
+    @extend .alert-danger;
+}
+ 
+#gforms_confirmation_message {
+    @extend .alert;
+    @extend .alert-success;
+}

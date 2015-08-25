@@ -1,0 +1,27 @@
+/*!
+Theme Name: #{wp_theme_name()}
+Theme URI: http://paradoxcreative.com
+Author: Paradox
+Author URI: http://paradoxcreative.com
+Description: Starter Theme by Paradox
+Version: 1.0
+Text Domain: Paradox
+Domain Path: /languages/
+*/
+
+// Modules and Variables
+@import "partials/base";
+
+// Third Party Libraries
+@import "bootstrap";
+@import "vendor/gravityforms";
+@import "vendor/font-awesome";
+@import "vendor/flexvideo"; 
+@import "vendor/googlefonts";
+
+// Partials (Organized by SMACSS System)
+@import "partials/layouts";
+@import "partials/modules";
+@import "partials/states";
+@import "partials/ie";
+@import "partials/print";

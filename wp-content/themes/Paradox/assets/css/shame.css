@@ -1,0 +1,50 @@
+/* ADD SHAMEFUL HACKS BELOW */
+
+
+/* Hack Active States for now */
+body > header .navbar .nav .current-menu-item > a {
+    color: #ffffff!important;
+}
+
+body > header .navbar .nav .current-menu-ancestor > a {
+    color: #ffffff!important;
+}
+
+/* Hack Testimonial Pics for now */
+.page-id-14 .main-col img {
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    border: 3px solid #d9d9d9;
+}
+
+
+/*** Forms: add to a gf bootstrap module and then figure out whats wrong with li's in the content area ***/
+/* Hack to make these inline */
+.gfield_radio li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* Hack to make these without shadow*/
+.gfield_radio li input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.gfield_checkbox input {
+    display: inline; 
+    width: auto;
+    height: auto; 
+    margin-right: 10px;
+}
+ 
+
+ /* Hack to get iPad navbar to not be so crowded */
+/* Small devices only (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+    .navbar-collapse .navbar-nav #menu-item-36 {
+       display: none;
+    }
+}
