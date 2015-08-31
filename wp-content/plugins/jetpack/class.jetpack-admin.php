@@ -2,7 +2,7 @@
 
 
 // Build the Jetpack admin menu as a whole
-class Jetpack_Admin { 
+class Jetpack_Admin {
 
 	/**
 	 * @var Jetpack_Admin

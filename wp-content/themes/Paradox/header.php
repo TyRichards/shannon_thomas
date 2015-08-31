@@ -48,7 +48,7 @@
 					
 		<?php do_action('before'); ?> 
 		<header class="header-top">			
-			<section class="container top-header hidden-xs hidden-sm">
+			<section class="container top-header hidden-xs hidden-sm" style="display:none!important;">
 				<div class="row">
 					<div class="col-sm-4 header-left">
 						<?php if (is_active_sidebar('header-left')) { ?> 
@@ -81,7 +81,7 @@
 					<div class="container">						
 						<div class="navbar-header">
 							<div class="row">	
-								<div class="col-xs-12 col-sm-8 visible-xs visible-sm">
+								<div class="col-xs-12 col-sm-8 col-md-12">
 									<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sm.png" alt="Southlake Christian Counseling">
 									</a>	
@@ -101,14 +101,14 @@
 						</div>
 						
 						<div class="collapse navbar-collapse navbar-primary-collapse">
-							<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
+							<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
 							<?php if (is_active_sidebar('navbar-right')) { 								
 								dynamic_sidebar('navbar-right'); 
 							} ?> 
 
-							<div class="navbar-right visible-md visible-lg">
-								<?php gravity_form(2, $display_title=true, $display_description=false, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
-							</div>        					
+<!-- 							<div class="navbar-right visible-md visible-lg">
+								<?php // gravity_form(2, $display_title=true, $display_description=false, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
+							</div>    -->     					
 						</div><!--.navbar-collapse-->
 					</div>
 				</nav>				
@@ -117,7 +117,7 @@
 		<div class="body-content">
 
 			<!-- Mobile Landing Section -->
-			<section class="mobile-landing visible-xs visible-sm col-xs-12">
+<!-- 			<section class="mobile-landing visible-xs visible-sm col-xs-12">
 				<div class="row">
 				    <div class="col-xs-6 phone" style="padding-right:5px">
 					    <a class="btn btn-primary btn-lg btn-block" href="tel:8178978882">
@@ -130,4 +130,4 @@
 					    </a> 				    
 				    </div>
 				</div>
-			</section>			
+			</section>	 -->		

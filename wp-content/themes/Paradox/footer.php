@@ -21,7 +21,7 @@
 								</a>
 							</div>
 	      				</div>
-	      				<div class="col-md-10">
+	      				<div class="col-md-8">
 	      					<div class="footer-credits">		        				
 	        					<a style="font-size:13px" href="<?php echo esc_url(home_url('/')); ?>">
 	        						© <?php echo date("Y"); ?> <?php echo esc_attr(get_bloginfo('name', 'display')); ?>
@@ -31,7 +31,7 @@
 			        			<?php dynamic_sidebar('footer-credits'); ?>
 			        		</div>
 		        		</div>
-		        		<div class="col-md-2">
+		        		<div class="col-md-4">
 			        		<div class="paradox">
 			        			<a href="http://paradoxcreative.com" target="_blank">
 			        				<p style="font-size:13px">Site crafted by Paradox</p>
@@ -46,7 +46,7 @@
 		<!--wordpress footer-->
 		<?php wp_footer(); ?> 
 		<!-- Typekit -->
-		<script src="//use.typekit.net/you2ofv.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>			
+		<script src="//use.typekit.net/wnh3mph.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>		
 	</body>
 </html>

@@ -10,7 +10,7 @@ $gray-light:            lighten(#000, 60%);   // #999
 $gray-lighter:          lighten(#000, 93.5%); // #eee
 
 // Color Conventions
-$brand-primary:         #56140a; // #4D6387; // #6AA7D0;
+$brand-primary:         #a2906c; //#c3523a; // #94c5b5; // #4D6387; // #6AA7D0;
 $brand-secondary:       #2980b9; // #428bca;
 $brand-success:         #5cb85c;
 $brand-info:            #3498db; // #5bc0de;
@@ -19,10 +19,10 @@ $brand-danger:          #c0392b;
 $brand-dark:            #171717;
 
 // Scaffolding /////////////////////////////////////////////////////////////////
-$body-bg:               #d5b792; //#ecf0f1;
+$body-bg:               #ffffff; //#ecf0f1;
 // $header-bg-color:       transparent;
-// $footer-bg-color:       $brand-primary;
-$text-color:            #563B27; // #71523A;
+$footer-bg-color:       #e0d7cc;
+$text-color:            #776e65; // #71523A;
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 
@@ -30,7 +30,7 @@ $link-hover-color:      darken($link-color, 15%);
 // Typography /////////////////////////////////////////////////////////////////
 
 // Font Families
-$font-family-sans-serif:    "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "proxima-nova-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:         "Roboto Slab", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:          $font-family-sans-serif;
@@ -52,11 +52,11 @@ $line-height-base: 1.65;
 $line-height-computed: floor(($font-size-base * $line-height-base));
 
 // Heading Styles
-$headings-font-family:    $font-family-serif; //"Domine", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family:    $font-family-sans-serif; //"Domine", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headings-font-weight:    400;
 $headings-line-height:    1.1;
-$h1-color:                $brand-primary !important;
-$headings-color:          $brand-dark;
+$h1-color:                #978257!important; //$brand-primary !important;
+$headings-color:          #978257;
 
 //-- Iconography
 //
@@ -322,16 +322,16 @@ $navbar-border-radius:             0px;
 $navbar-collapse-max-height:       700px;
 
 // $navbar-default-color:             #777;
-$navbar-default-bg:                darken($brand-primary, 5%);
+$navbar-default-bg:                $body-bg; // darken($brand-primary, 5%);
 $navbar-default-border:            $navbar-default-bg;
 
 // // Navbar links
-$navbar-default-link-color:                #ffffff;
-$navbar-default-link-hover-color:          #ffffff;
-$navbar-default-link-open-color:           #ffffff;
-$navbar-default-link-hover-bg:             darken($brand-primary, 10%);
-$navbar-default-link-active-color:         #ffffff;
-$navbar-default-link-active-bg:            $navbar-default-link-hover-bg;
+$navbar-default-link-color:                $text-color;
+$navbar-default-link-hover-color:          $h1-color;
+$navbar-default-link-open-color:           $brand-primary;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         $brand-primary;
+$navbar-default-link-active-bg:            transparent;
 // $navbar-default-link-disabled-color:       #ccc;
 // $navbar-default-link-disabled-bg:          transparent;
 
@@ -663,8 +663,8 @@ $list-bullet-color:             #CCCCCC;
 // $panel-default-border:        #ddd;
 // $panel-default-heading-bg:    #f5f5f5;
 
-// $panel-primary-text:          #fff;
-// $panel-primary-border:        $brand-primary;
+$panel-primary-text:          #e0d7cc;
+$panel-primary-border:        transparent;
 // $panel-primary-heading-bg:    $brand-primary;
 
 // $panel-success-text:          $state-success-text;
