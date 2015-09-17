@@ -31,7 +31,7 @@
 			        			<?php dynamic_sidebar('footer-credits'); ?>
 			        		</div>
 		        		</div>
-		        		<div class="col-md-4">
+		        		<div class="col-md-4"> 
 			        		<div class="paradox">
 			        			<a href="http://paradoxcreative.com" target="_blank">
 			        				<p style="font-size:13px">Site crafted by Paradox</p>
