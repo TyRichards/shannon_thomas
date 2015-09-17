@@ -10,7 +10,7 @@ $gray-light:            lighten(#000, 60%);   // #999
 $gray-lighter:          lighten(#000, 93.5%); // #eee
 
 // Color Conventions
-$brand-primary:         #a2906c; //#c3523a; // #94c5b5; // #4D6387; // #6AA7D0;
+$brand-primary:         #C70101; //#c3523a; // #94c5b5; // #4D6387; // #6AA7D0;
 $brand-secondary:       #2980b9; // #428bca;
 $brand-success:         #5cb85c;
 $brand-info:            #3498db; // #5bc0de;
@@ -21,8 +21,8 @@ $brand-dark:            #171717;
 // Scaffolding /////////////////////////////////////////////////////////////////
 $body-bg:               #ffffff; //#ecf0f1;
 // $header-bg-color:       transparent;
-$footer-bg-color:       #e0d7cc;
-$text-color:            #776e65; // #71523A;
+$footer-bg-color:       #e1e2e9;
+$text-color:            #6c747c; // #71523A;
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 
@@ -55,7 +55,7 @@ $line-height-computed: floor(($font-size-base * $line-height-base));
 $headings-font-family:    $font-family-sans-serif; //"Domine", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headings-font-weight:    400;
 $headings-line-height:    1.1;
-$h1-color:                #978257!important; //$brand-primary !important;
+$h1-color:                $brand-primary!important; //$brand-primary !important;
 $headings-color:          #978257;
 
 //-- Iconography
