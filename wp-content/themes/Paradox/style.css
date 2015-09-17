@@ -6644,6 +6644,9 @@ header.header-top {
   padding-left: 0px;
   padding-right: 0px; }
 
+.service-header hr {
+  margin: 30px 0 50px 0; }
+
 .clipboard-icon {
   background: url('/wp-content/themes/Paradox/assets/images/clipboard.png') no-repeat top left;
   padding-left: 120px;
