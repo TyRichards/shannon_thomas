@@ -788,7 +788,7 @@ body.blog, body.single, body.archive {
             .entry-header {
                 .entry-title {}                
                 .entry-meta {
-                    background-color: #e0d7cc;
+                    background-color: $footer-bg-color;
                     font-size: 13px;
                     text-transform: capitalize;
                     padding: 0;

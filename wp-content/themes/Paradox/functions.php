@@ -60,76 +60,13 @@ add_action('after_setup_theme', 'bootstrapBasicSetup');
  * Register widget areas
  */
 function bootstrapBasicWidgetsInit() 
-{
-	register_sidebar(array(
-		'name'          => __('Header left', 'bootstrap-basic'),
-		'id'            => 'header-left',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<p class="widget-title lead">',
-		'after_title'   => '</p>',
-	));
-
-	register_sidebar(array(
-		'name'          => __('Header right', 'bootstrap-basic'),
-		'id'            => 'header-right',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<p class="widget-title lead">',
-		'after_title'   => '</p>',
-	));
-	
-	register_sidebar(array(
-		'name'          => __('Navigation bar right', 'bootstrap-basic'),
-		'id'            => 'navbar-right',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	));
-
-    register_sidebar(array(
-    	'id' => 'sidebar2', //
-    	'name' => __('Home Bottom Section', 'bonestheme'),
-    	'description' => __('The widget area for bottom of home page.', 'bonestheme'),
-    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</div>',
-    	'before_title' => '<h4 class="widgettitle">',
-    	'after_title' => '</h4>',
-    ));	
-	
-	// register_sidebar(array(
-	// 	'name'          => __('Sidebar left', 'bootstrap-basic'),
-	// 	'id'            => 'sidebar-left',
-	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	// 	'after_widget'  => '</aside>',
-	// 	'before_title'  => '<h2 class="widget-title">',
-	// 	'after_title'   => '</h2>',
-	// ));
+{	
 	
 	register_sidebar(array(
 		'name'          => __('Sidebar Default', 'bootstrap-basic'),
 		'id'            => 'sidebar-default',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	));
-	
-	register_sidebar(array(
-		'name'          => __('Footer left', 'bootstrap-basic'),
-		'id'            => 'footer-left',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	));
-	
-	register_sidebar(array(
-		'name'          => __('Footer right', 'bootstrap-basic'),
-		'id'            => 'footer-right',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	));

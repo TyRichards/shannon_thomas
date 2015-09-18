@@ -7061,7 +7061,7 @@ body.blog .body-content article, body.single .body-content article, body.archive
   margin-bottom: 40px;
   padding-bottom: 38px; }
   body.blog .body-content article .entry-header .entry-meta, body.single .body-content article .entry-header .entry-meta, body.archive .body-content article .entry-header .entry-meta {
-    background-color: #e0d7cc;
+    background-color: #e1e2e9;
     font-size: 13px;
     text-transform: capitalize;
     padding: 0;
@@ -7237,7 +7237,7 @@ header.page-header {
     display: block;
     width: 100%;
     margin: 0;
-    background: #C70101;
+    background: #e1e2e9;
     padding: 12px 0;
     border-radius: 0; }
     body header .top-navbar .navbar-header .navbar-toggle .menu-elements {
@@ -7245,6 +7245,10 @@ header.page-header {
       margin-right: auto;
       float: none;
       width: 80px; }
+    body header .top-navbar .navbar-header .navbar-toggle .menu-text {
+      color: #6c747c !important; }
+    body header .top-navbar .navbar-header .navbar-toggle .icon-bar {
+      background-color: #6c747c !important; }
 
   .clipboard-icon {
     padding-left: 109px;

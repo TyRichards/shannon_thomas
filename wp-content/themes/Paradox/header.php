@@ -46,33 +46,6 @@
 					
 		<?php do_action('before'); ?> 
 		<header class="header-top">			
-			<section class="container top-header hidden-xs hidden-sm" style="display:none!important;">
-				<div class="row">
-					<div class="col-sm-4 header-left">
-						<?php if (is_active_sidebar('header-left')) { ?> 
-							<div class="pull-left text-left">
-								<?php dynamic_sidebar('header-left'); ?> 
-							</div>
-							<div class="clearfix"></div>
-						<?php } // endif; ?> 						
-					</div>
-					<div class="col-sm-4 header-logo">
-						<div class="main-logo">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-					        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Southlake Christian Counseling" width="100%">
-					        </a>
-				        </div>			        
-					</div>
-					<div class="col-sm-4 header-right">					
-						<?php if (is_active_sidebar('header-right')) { ?> 
-							<div class="pull-right text-right">
-								<?php dynamic_sidebar('header-right'); ?> 
-							</div>
-							<div class="clearfix"></div>
-						<?php } // endif; ?> 
-					</div>
-				</div>
-			</section><!--.section-top-header-->		
 			
 			<section class="top-navbar">				
 				<nav class="navbar navbar-default" role="navigation">
@@ -113,19 +86,3 @@
 			</section> <!-- section-navbar -->
 		</header>		
 		<div class="body-content">
-
-			<!-- Mobile Landing Section -->
-<!-- 			<section class="mobile-landing visible-xs visible-sm col-xs-12">
-				<div class="row">
-				    <div class="col-xs-6 phone" style="padding-right:5px">
-					    <a class="btn btn-primary btn-lg btn-block" href="tel:8178978882">
-					        <i class="fa fa-phone"></i>(817) 897-8882
-					    </a> 
-				    </div>
-				    <div class="col-xs-6 phone" style="padding-left:5px">
-					    <a class="btn btn-primary btn-lg btn-block" href="mailto:shannon@southlakecounseling.org">
-					        <i class="fa fa-envelope"></i>Send Email
-					    </a> 				    
-				    </div>
-				</div>
-			</section>	 -->		
