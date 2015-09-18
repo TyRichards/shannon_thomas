@@ -12,7 +12,6 @@ Template Name: Products
             <section class="main-col page-content col-sm-8 col-sm-offset-2 container">                
                 <div id="main" class="site-main" role="main">
 
-
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     
                         <div class="service-header">
@@ -96,6 +95,25 @@ Template Name: Products
                             </div> -->
                 
                     <?php endwhile; endif; ?>
+
+                    <!-- wp content -->
+                    <?php 
+                    while (have_posts()) {
+                      the_post();
+
+                      get_template_part('content', 'page');
+
+                      echo "\n\n";
+                      
+                      // If comments are open or we have at least one comment, load up the comment template
+                      if (comments_open() || '0' != get_comments_number()) {
+                        comments_template();
+                      }
+
+                      echo "\n\n";
+
+                    } //endwhile;
+                    ?>                     
 
                 </div>           
             </section>            
