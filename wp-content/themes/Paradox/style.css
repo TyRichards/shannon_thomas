@@ -6842,6 +6842,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 8px;
   padding-right: 8px; }
 
+.validation_error {
+  display: none; }
+
+body.home #gform_confirmation_message_2 {
+  color: white;
+  margin: 45px 0 22px 0; }
+
 .body-content .gform_body ul li:before {
   font-family: inherit;
   content: none;

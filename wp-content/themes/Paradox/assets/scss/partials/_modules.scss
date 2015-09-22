@@ -122,7 +122,7 @@ header.header-top {
         }
         .widget {
             p { color: #B3746B; font-size: 14px; margin: 0; }
-            a { color: #B3746B }
+            a { color: #B3746B; }
         }
         .social-links {
             left: 19px;
@@ -471,7 +471,14 @@ h1, h2, h3, h4, h5, h6 {
     @extend .btn-primary    
 }
 
+.validation_error {
+    display: none;
+}
 
+body.home #gform_confirmation_message_2 {
+    color: white;
+    margin: 45px 0 22px 0;
+}
 
 .body-content .gform_body {
 
